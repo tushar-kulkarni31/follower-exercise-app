@@ -2,3 +2,15 @@
 .media { 
     margin-bottom: 30px;
 }
+
+.avatar {
+    position: absolute;
+    width: 24px;
+    height: 26px;
+    border-radius: 48px;
+}
+
+.content {
+    position: relative;
+    margin-left: 37px;
+}
