@@ -8,7 +8,15 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prod:gh:deploy": "ng build --prod --base-href='https://tushar-kulkarni31.github.io/follower-exercise-app/' && sudo ngh",
+    "test:gh:deploy": "ng build --env=test --base-href='https://tushar-kulkarni31.github.io/follower-exercise-app/' && sudo ngh",
+    "qa:gh:deploy": "ng build --env=qa --base-href='https://tushar-kulkarni31.github.io/follower-exercise-app/' && sudo ngh",
+    "dev:gh:deploy": "ng build --base-href='https://tushar-kulkarni31.github.io/follower-exercise-app/' && sudo ngh",
+    "prod:fb:deploy": "ng build --prod && firebase deploy",
+    "test:fb:deploy": "ng build --env=test && firebase deploy",
+    "qa:fb:deploy": "ng build --env=qa && firebase deploy",
+    "dev:fb:deploy": "ng build && firebase deploy"
   },
   "private": true,
   "dependencies": {
